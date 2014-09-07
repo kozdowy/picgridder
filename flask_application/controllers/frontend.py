@@ -45,3 +45,17 @@ class ProfileView(TemplateView):
             'content': 'This is the profile page',
             'username': '<username>'
         }
+
+
+class UploadPhotoView(TemplateView):
+    blueprint = frontend
+    route = '/uploadphoto'
+    template_name = 'uploadphoto.html'
+    decorators = [login_required]
+
+
+class UploadTileView(TemplateView):
+    blueprint = frontend
+    route = '/uploadtile'
+    template_name = 'uploadtile.html'
+    decorators = [login_required]
