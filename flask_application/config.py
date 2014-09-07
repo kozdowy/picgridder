@@ -27,8 +27,8 @@ class Config(object):
         self.MAIL_SERVER = 'smtp.gmail.com'
         self.MAIL_PORT = 465
         self.MAIL_USE_SSL = True
-        self.MAIL_USERNAME = 'username@gmail.com'
-        self.MAIL_PASSWORD = '*********'
+        self.MAIL_USERNAME = 'picgridder@gmail.com'
+        self.MAIL_PASSWORD = 'PICS PLOX'
 
         # Flask-Security setup
         self.SECURITY_EMAIL_SENDER = 'Security < security@example.com >'

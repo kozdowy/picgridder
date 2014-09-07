@@ -17,3 +17,9 @@ class User(db.Document, UserMixin):
     active = db.BooleanField(default=True)
     confirmed_at = db.DateTimeField()
     roles = db.ListField(db.ReferenceField(Role), default=[])
+
+
+class Image(db.Document, UserMixin):
+    username = db.StringField(max_length=255)
+    path = db.StringField(max_length=255)
+    timestamp = db.DateTimeField()

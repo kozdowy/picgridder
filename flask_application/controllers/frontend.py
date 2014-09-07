@@ -23,6 +23,17 @@ class IndexView(TemplateView):
         }
 
 
+class BrowseView(TemplateView):
+    blueprint = frontend
+    route = '/browse'
+    template_name = 'browse.html'
+
+    def get_context_data(self, *args, **kwargs):
+        return{
+            'pics': 9
+        }
+
+
 class ProfileView(TemplateView):
     blueprint = frontend
     route = '/profile'
@@ -31,5 +42,6 @@ class ProfileView(TemplateView):
 
     def get_context_data(self, *args, **kwargs):
         return {
-            'content': 'This is the profile page'
+            'content': 'This is the profile page',
+            'username': '<username>'
         }
