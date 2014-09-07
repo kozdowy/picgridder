@@ -91,3 +91,4 @@ app.security = Security(app, user_datastore)
 
 from flask_application.controllers.admin import admin
 app.register_blueprint(admin)
+
